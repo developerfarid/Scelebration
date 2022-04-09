@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600&family=Lato:wght@300;400;700&family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Sail&display=swap");
+@layer components {
+  .navitems {
+    @apply mx-2 px-1  text-2xl md:text-lg relative after:absolute after:left-0 after:top-full   after:h-0.5 after:bg-red-700 after:w-0 after:hover:w-full after:ease-in after:duration-300    text-white md:text-gray-500 md:my-0 duration-300 font-semibold transition-all hover:text-red-700 cursor-pointer font-Overlock;
+  }
+  .heading {
+    @apply text-4xl text-red-600 font-Sail z-10 transition-all;
+  }
+  .btn {
+    @apply transition duration-300  z-50 bg-text-heading font-Lato text-xs font-semibold text-white py-3 px-8 tracking-widest  rounded-sm transform hover:-translate-y-4;
+  }
+  .sub-heading {
+    @apply font-Overlock text-2xl font-semibold text-text-sub;
+  }
+}
+
+.h {
+  transform: translateY();
+}
